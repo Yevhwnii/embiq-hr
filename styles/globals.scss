@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .heading {
+    position: relative;
+    span {
+      &:after {
+        top: 50%;
+        right: 0;
+        content: "";
+        position: absolute;
+        width: 40%;
+        height: 1px;
+        opacity: 0.75;
+        background: lightgray;
+      }
+      &:before {
+        top: 50%;
+        left: 0;
+        content: "";
+        position: absolute;
+        width: 40%;
+        height: 1px;
+        opacity: 0.75;
+        background: lightgray;
+      }
+    }
+  }
+}
